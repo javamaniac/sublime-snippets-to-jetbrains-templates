@@ -1,6 +1,10 @@
-// import { Element } from 'html-element';
+//import { Element } from 'html-element';
 
-const snippets = require('./snippets.json')
+const myArgs = process.argv.slice(2);
+const file = '../../' + myArgs[0]
+//console.log('myArgs: ', myArgs);
+ 
+const snippets = require(file)
 const snippetNames = Object.keys(snippets)
 
 console.log(`<templateSet group="Polymer">`)
