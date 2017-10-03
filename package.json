@@ -1,0 +1,22 @@
+{
+  "name": "sublime-snippets-to-jetbrains-templates",
+  "version": "1.0.0",
+  "description": "Convert Sublime snippets to JetBrains (WebStorm, PhpStorm) live templates",
+  "main": "convert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convertToJetBrains": "node convert.js > LiveTemplates.xml",
+    "valid": "meld jetBrains/resources/liveTemplates/Polymer.xml jetBrains/resources/liveTemplates/Polymer2.xml"
+  },
+  "keywords": [
+    "snippets",
+    "templates",
+    "sublime",
+    "jetbrains",
+    "webstorm",
+    "phpstorm",
+    "ide"
+  ],
+  "author": "Javamaniac",
+  "license": "ISC"
+}
